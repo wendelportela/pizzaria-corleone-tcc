@@ -4,6 +4,8 @@ import CompPedido from '../../components/compPedido'
 import PedidoAndamento1 from '../../components/pedidoAndamento1'
 import './index.scss'
 
+
+// wendel
 export default function ComprarPedido() {
 
     const [mostrar1, setMostrar1] = useState(true)
