@@ -1,0 +1,85 @@
+
+
+
+.pagina-confirmacao-pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F5F2;
+    padding: 45px;
+
+
+    .andamento {
+        margin-bottom: 35px;
+    }
+
+
+ 
+    .final-confirmacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .precos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 750px;
+    }
+
+    .precos div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .precos h3 {
+        font-size: 18px;
+        padding-right: 15px;
+    }
+
+    .precos p { 
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .precos h2 {
+        padding-right: 15px;
+        color: #6d6d6d;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .precos h4 {
+        color: #0B9B00;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #cancelar {
+        padding: 10px 35px;
+        color: #fff;
+        background-color: #53220D;
+        border-radius: 50px;
+        border: #DFDCDC;
+        margin-right: 10px;
+    }
+
+    #fazer {
+        padding: 10px 45px;
+        color: #000;
+        background-color: #FFC857;
+        margin-left: 10px;
+        border-radius: 50px;
+        border: #DFDCDC;
+    }
+}

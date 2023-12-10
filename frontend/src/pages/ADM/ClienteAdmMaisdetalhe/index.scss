@@ -1,0 +1,374 @@
+.pagina-mais--detalhes {
+    display: flex;
+    flex-direction: row;
+    background-color: #D9D9D9;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+
+   
+
+
+    .container--mais {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+       
+       
+      
+    }
+
+    .tiitulo {
+        background-color: #F7FCFE;
+        width: 100%;
+        background-color: #F7FCFE;
+        width: 100%;
+        display: flex;
+        font-family: lato-regular;
+        height: 6%;
+        align-items: center;
+        padding-left: 5px;
+
+    }
+
+    .tiitulo>h1 {
+        font-size: 23px;
+        font-family: lato-regular;
+        font-weight: 580;
+        color: black;
+        padding-left: 5px;
+    }
+
+    .subbtitulo {
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        font-family: lato-regular;
+        height: 8%;
+        align-items: center;
+        padding-left: 10px;
+        //border-radius: 10px; 
+        margin-bottom: 20px;
+    }
+
+    .subbtitulo>h1 {
+        padding-left: 8px;
+        font-size: 17px;
+        font-family: lato-regular;
+        color: #777676;
+        font-weight: 450;
+    }
+
+    .cabecalho-mais h2 {
+        font-size: 23px;
+        font-family: lato-regular;
+        font-weight: 580;
+        color: black;
+        padding-left: 5px;
+    }
+
+
+
+    .cabecalho-mais {
+        background-color: #F7FCFE;
+        display: flex;
+        justify-content: flex-start;
+        height: 8%;
+        padding-left: 7px;
+        align-items: center;
+        font-size: 11px;
+
+        //box-shadow: 0 5px 5px -5px #000;
+    }
+
+    .cabecalho-mais h2 {
+        font-weight: 500;
+    }
+
+    .sub-titulo-mais {
+
+        //border-radius: 5px;
+        display: flex;
+        font-size: 14px;
+        padding: 20px 20px;
+
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .sub-titulo-mais h1 {
+        padding-left: 8px;
+        font-size: 17px;
+        font-family: lato-regular;
+        color: #777676;
+        font-weight: 450;
+    }
+
+    .sub-titulo-mais div {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            height: 12px;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+    }
+
+
+    .sub-titulo-mais p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .conteudo-mais {
+        background-color: #ffffff;
+        border-radius: 7px;
+        padding: 25px;
+        margin: 10px;
+    }
+
+    .parte-dos-filtros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .buscar-mais {
+        display: flex;
+        border: #A59A9A 1px solid;
+        width: 30%;
+        padding: 5px 10px;
+        border-radius: 7px;
+        height: 40px;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .buscar-mais div {
+        cursor: pointer;
+
+    }
+
+    .buscar-mais input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        margin-left: 10px;
+
+    }
+
+    .pedido-mais {
+        background-color: #97F595;
+        padding: 10px;
+        height: 40px;
+
+
+
+    }
+
+    .tabela-mais-detalhes {
+        display: flex;
+        margin-top: 20px;
+
+        thead tr th {
+            font-weight: 600;
+            align-items: flex-start;
+        }
+
+
+        tbody {
+            width: 100%;
+        }
+
+        tbody tr td {
+            padding-left: 50px;
+        }
+    }
+
+    .tabela-mais-detalhes thead tr {
+        display: flex;
+        flex-direction: column;
+        color: #909090;
+    }
+
+    .tabela-mais-detalhes thead th {
+        padding: 10px 0px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+
+    .comp-linha-detalhes {
+        background-color: #909090;
+        height: 1px !important;
+        padding: 0.5px !important;
+        width: 100%;
+    }
+
+
+    .compe-linha-detalhes {
+
+        height: 1px !important;
+        padding: 0.5px !important;
+        width: 100%;
+    }
+
+
+
+    .tabela-mais-detalhes tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabela-mais-detalhes tbody td {
+        font-weight: 400;
+        color: #777676;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .parte-filtros-carrinho {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+
+
+
+
+        select {
+
+            border: #A59A9A 1px solid;
+
+            padding: 5px;
+            border-radius: 3px;
+            color: #636363;
+            outline: none;
+
+
+            optgroup {
+
+
+                label {
+
+                    font-weight: bold;
+                }
+
+                option {
+                    color: #636363;
+
+                }
+            }
+        }
+
+    }
+
+    .tabela-cartao {
+        display: flex;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 25px;
+        margin: 10px;
+
+        thead tr th {
+            font-weight: 600;
+            align-items: flex-start;
+        }
+
+
+        tbody {
+            width: 100%;
+        }
+
+        tbody tr td {
+            padding-left: 50px;
+        }
+    }
+
+    .tabela-cartao thead tr {
+        display: flex;
+        flex-direction: column;
+        color: #909090;
+    }
+
+    .tabela-cartao thead th {
+
+        padding: 9.7px 0px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+
+    .comp-linha-detalhes {
+        background-color: #909090;
+        height: 1px !important;
+        padding: 0.5px !important;
+        width: 100%;
+    }
+
+
+    .compe-linha-detalhes {
+
+        height: 1px !important;
+        padding: 0.5px !important;
+        width: 100%;
+    }
+
+
+
+    .tabela-cartao tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabela-cartao tbody td {
+        font-weight: 400;
+        color: #777676;
+
+        padding: 9.8px 0px 10px 0px;
+    }
+
+    .compp-linha-detalhes {
+
+
+        background-color: #909090;
+        height: 1px !important;
+        padding: 0.5px !important;
+        width: 100%;
+    }
+
+
+    .compp-linha-detalhes {
+
+
+        height: 1px !important;
+        padding: 0.5px !important;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+}

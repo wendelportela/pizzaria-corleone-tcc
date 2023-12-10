@@ -1,0 +1,19 @@
+
+.comentarios{
+ 
+     width: 540px !important;
+     margin: 5px ;
+     margin-bottom: 20px !important;
+ 
+    .comentarios-perfil{
+        display:flex !important ;
+        align-items: center !important;
+        margin-bottom: 5px !important;
+    }
+    .comentarios-perfil > img {
+        margin-right: 10px !important; 
+    }
+    .comentarios-estrelas >img{
+       width: 20px !important;
+    }
+}

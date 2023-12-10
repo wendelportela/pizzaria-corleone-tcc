@@ -1,0 +1,98 @@
+
+
+
+.pagina-comprar-pedido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F5F2;
+    padding: 45px;
+
+
+    .container-comprar > div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    
+    .andamento {
+        margin-bottom: 35px;
+    }
+
+ 
+    .final-comprar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .adicionar h1 {
+        font-size: 18px;
+        margin-left: 105px;
+        color: #53220D;
+    }
+
+    .adicionar {
+        display: flex;
+        justify-content: flex-start !important;
+    }
+
+    .precos {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-right: 50px;
+    }
+
+    .precos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .precos div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-right: 50px;
+    }
+
+    .precos h3 {
+        font-size: 18px;
+    }
+
+    .precos p { 
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 250px;
+    }
+
+    #cancelar {
+        padding: 10px 35px;
+        color: #fff;
+        background-color: #53220D;
+        border-radius: 50px;
+        border: #DFDCDC;
+        margin-right: 10px;
+    }
+
+    #fazer {
+        padding: 10px 45px;
+        color: #000;
+        background-color: #FFC857;
+        margin-left: 10px;
+        border-radius: 50px;
+        border: #DFDCDC;
+        font-weight: 600;
+    }
+}

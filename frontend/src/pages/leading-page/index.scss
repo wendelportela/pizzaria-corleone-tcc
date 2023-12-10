@@ -1,0 +1,466 @@
+.leadingPage {
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .introducao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+        height: 100vh;
+        width: 100%;
+
+        text-align: center;
+
+        background-image: url('../../assets/images/pictures/fundo-leading.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-family: lato-regular;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-family: lobster-two-regular;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 30px;
+            border: 1px solid #FFF;
+            background: #FFC857;
+
+            width: 185px;
+            height: 40px;
+            flex-shrink: 0;
+
+            margin-top: 15px;
+
+            transition: 170ms;
+
+            &:hover {
+                cursor: pointer;
+                background: #53220D;
+
+                p {
+                    color: white;
+                }
+
+                svg {
+                    fill: #ffffff
+                }
+            }
+
+            p {
+                color: #53220D;
+                font-family: lato-regular;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 5px;
+            }
+
+            svg {
+                fill: #53220D
+            }
+
+        }
+    }
+
+
+
+    .secaoDoisLeading {
+        display: flex;
+        align-items: center;
+
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        gap: 30px;
+
+        transition: .6s;
+
+        &:hover>div:not(:hover) {
+            opacity: 0.6;
+        }
+
+        >div:hover {
+            scale: 1.1;
+            transition: .6s;
+        }
+
+        .propaganda1 {
+            display: flex;
+            align-items: end;
+
+            width: 328px;
+            height: 330px;
+
+            background-image: url('../../assets/images/pictures/fundo-margherita.png');
+            background-repeat: no-repeat;
+            background-position: cover;
+
+            border-radius: 0px 10px 10px 0px;
+
+            .sombrinha {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                padding: 2px 5px;
+
+                border-radius: 0px 0px 10px 10px;
+                background: rgba(0, 0, 0, 0.47);
+                padding: 10px 10px;
+                color: white;
+
+                width: 328px;
+                height: 127.618px;
+
+                h2 {
+                    color: #FFF;
+                    font-family: lobster-two-regular;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: lato-regular;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                button {
+                    width: 91.217px;
+                    height: 39.734px;
+                    flex-shrink: 0;
+                    border: 1px solid #FFF;
+                    background: #53220D;
+                    color: #FFF;
+                    font-family: lobster-two-regular;
+                    font-size: 16px;
+                    position: relative;
+                    bottom: 10px;
+                    transition: 200ms;
+                    right: -210px;
+
+                    &:hover {
+                        background-color: #FFC857;
+                        color: #53220D;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+
+        .propaganda2 {
+            display: flex;
+            align-items: end;
+
+            width: 328px;
+            height: 330px;
+
+            background-image: url('../../assets/images/pictures/fundo-vinho.png');
+            background-repeat: no-repeat;
+            background-position: cover;
+
+            border-radius: 0px 10px 10px 0px;
+
+            .sombrinha {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                padding: 2px 5px;
+
+                border-radius: 0px 0px 10px 10px;
+                background: rgba(0, 0, 0, 0.47);
+                padding: 10px 10px;
+                color: white;
+
+                width: 325px;
+                height: 127.618px;
+
+                h2 {
+                    color: #FFF;
+                    font-family: lobster-two-regular;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: lato-regular;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                button {
+                    width: 91.217px;
+                    height: 39.734px;
+                    flex-shrink: 0;
+                    border: 1px solid #FFF;
+                    background: #53220D;
+                    color: #FFF;
+                    font-family: lobster-two-regular;
+                    font-size: 16px;
+                    position: relative;
+                    bottom: 10px;
+                    right: -210px;
+
+                    transition: 200ms;
+
+                    &:hover {
+                        background-color: #FFC857;
+                        color: #53220D;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+
+
+        .propaganda3 {
+            display: flex;
+            align-items: end;
+
+            width: 328px;
+            height: 330px;
+
+            background-image: url('../../assets/images/pictures/fundo-canoli.png');
+            background-repeat: no-repeat;
+            background-position: cover;
+
+            border-radius: 0px 10px 10px 0px;
+
+            .sombrinha {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                padding: 2px 5px;
+
+                border-radius: 0px 0px 10px 10px;
+                background: rgba(0, 0, 0, 0.47);
+                padding: 10px 10px;
+                color: white;
+
+                width: 325px;
+                height: 127.618px;
+
+                h2 {
+                    color: #FFF;
+                    font-family: lobster-two-regular;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #FFF;
+                    font-family: lato-regular;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                button {
+                    width: 91.217px;
+                    height: 39.734px;
+                    flex-shrink: 0;
+                    border: 1px solid #FFF;
+                    background: #53220D;
+                    color: #FFF;
+                    font-family: lobster-two-regular;
+                    font-size: 16px;
+                    position: relative;
+                    bottom: 10px;
+                    transition: 200ms;
+                    right: -210px;
+
+                    &:hover {
+                        background-color: #FFC857;
+                        color: #53220D;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+
+
+        .yesterday {
+            color: #53220D;
+            font-family: lato-regular;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+
+    .ingredientes {
+        width: 100%;
+    }
+
+    .mais-sobre {
+        width: 100%;
+    }
+
+    .classePizza {
+        background-image: url(../../assets/images/pictures/pipi.png);
+        width: 266px;
+        height: 206px;
+        border-radius: 6px;
+    }
+
+    .classeSobremesa {
+        background-image: url(../../assets/images/pictures/soso.png);
+        width: 266px;
+        height: 206px;
+        border-radius: 6px;
+    }
+
+    .classeBebidas {
+        background-image: url(../../assets/images/pictures/bebe.png);
+        width: 266px;
+        height: 206px;
+        border-radius: 6px;
+    }
+
+    .classeVegana {
+        background-image: url(../../assets/images/pictures/opop.png);
+        width: 266px;
+        height: 206px;
+        border-radius: 6px;
+    }
+
+
+
+
+    .compsobre {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        text-decoration: none;
+        outline: none;
+    }
+
+    .quebraLeadingPage {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100%;
+
+        margin: 50px 0px;
+
+        .etapa {
+            width: 15%;
+
+            color: rgba(0, 0, 0, 0.40);
+            text-align: center;
+            font-family: lato-regular;
+            font-size: 17px;
+
+            img {
+                height: 102.28;
+            }
+        }
+
+        .linha {
+            width: 9%;
+            height: 2px;
+            background-color: #D2D2D2;
+
+
+            border-radius: 6px;
+        }
+    }
+
+    .redirecionar {
+        // transform: translate(-50%, -50%);
+        width: 604.486px;
+        height: 64px;
+        border: 0.5px solid #53220D;
+        background: #FFF;
+
+        color: #53220D;
+        text-align: center;
+        font-family: lato-regular;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+
+        transition: 150ms;
+
+        &:hover {
+
+            background-color: #FFC857;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.swiper-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.swiper-button-prev {
+    color: #ffffff !important;
+}
+
+.swiper-button-next {
+    color: #ffffff !important;
+}
+
+.swiper-pagination-bullet {
+    background: #ffffff !important;
+}

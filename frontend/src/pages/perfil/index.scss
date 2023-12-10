@@ -1,0 +1,25 @@
+.background-minhaconta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.background-minhaconta::before {
+    content: "";
+    background-image: url('../../assets/images/pictures/fundo-leading.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: brightness(0.45);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

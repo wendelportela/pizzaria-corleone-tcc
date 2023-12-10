@@ -1,0 +1,141 @@
+.card {
+    width: 50vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #FFF;
+    font-family: lato-regular, Arial, Helvetica, sans-serif;
+
+    padding: 0px 0px 15px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    h1 {
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+}
+
+.sobremesa {
+    background:
+        linear-gradient(90deg, #FFC857 1.37%, rgba(255, 200, 87, 0.91) 20.86%, rgba(255, 200, 87, 0.96) 29.59%, rgba(255, 200, 87, 0.81) 40.87%, rgba(217, 217, 217, 0.00) 99.87%),
+        url('../../assets/images/pictures/testeSobre.svg');
+
+    background-repeat: no-repeat;
+    background-size: 120%;
+    transition: all 0.5s ease-in-out;
+    background-position: 0 0;
+
+    h1,
+    p,
+    h3 {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.sobremesa:hover {
+    background-size: 130%;
+
+    h1,
+    p,
+    h3 {
+        transform: skew(2.5deg, 1.2deg) translateX(2%);
+    }
+}
+
+.pizza {
+    background:
+        linear-gradient(90deg, #53220D 1.37%, rgba(83, 34, 13, 0.91) 20.86%, rgba(113, 75, 58, 0.96) 29.59%, rgba(130, 98, 84, 0.81) 40.87%, rgba(217, 217, 217, 0.00) 99.87%),
+        url('../../assets/images/pictures/pizzaFiltroLeadingPage.svg');
+
+    background-repeat: no-repeat;
+    background-size: 120%;
+    transition: all 0.5s ease-in-out;
+    background-position: 0 0;
+    
+
+    h1,
+    p,
+    h3 {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.pizza:hover {
+    background-size: 130%;
+
+    h1,
+    p,
+    h3 {
+        transform: skew(2.5deg, 1.2deg) translateX(2%);
+    }
+}
+
+.veg {
+    background:
+        linear-gradient(90deg, #53220D 1.37%, rgba(83, 34, 13, 0.91) 20.86%, rgba(113, 75, 58, 0.96) 29.59%, rgba(130, 98, 84, 0.81) 40.87%, rgba(217, 217, 217, 0.00) 99.87%),
+        url('../../assets/images/pictures/vegFiltroLeadingPage.svg');
+
+    background-repeat: no-repeat;
+    background-size: 120%;
+    transition: all 0.5s ease-in-out;
+    background-position: 0 0;
+
+    h1,
+    p,
+    h3 {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.veg:hover {
+    background-size: 130%;
+
+    h1,
+    p,
+    h3 {
+        transform: skew(2.5deg, 1.2deg) translateX(2%);
+    }
+}
+
+.bebida {
+    background:
+        linear-gradient(90deg, #830D23 1.37%, #830D23 13.68%, #830D23 27.53%, rgba(217, 217, 217, 0.00) 99.87%),
+        url('../../assets/images/pictures/bebidaFiltroLeadingPage.svg');
+
+    background-repeat: no-repeat;
+    background-size: 120%;
+    transition: all 0.5s ease-in-out;
+    background-position: 0 0;
+
+    h1,
+    p,
+    h3 {
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.bebida:hover {
+    background-size: 130%;
+
+    h1,
+    p,
+    h3 {
+        transform: skew(2.5deg, 1.2deg) translateX(2%);
+    }
+}

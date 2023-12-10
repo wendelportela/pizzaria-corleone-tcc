@@ -1,0 +1,88 @@
+.card-product {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.30);
+
+    width: 300.984px;
+    height: 161px;
+
+    transition: 1s ease;
+
+    &:hover{
+        scale: 1.05;
+    }
+    
+    .produto {
+        background-image: url('../../../assets/images/pictures/pizza-marguerita.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+
+        width: 244.483px;
+        height: 145.772px;
+    }
+
+    .descricao-produto{
+        margin-left: 5px;
+    }
+
+    .descricaoProduto {
+
+
+        h3 {
+            color: #000;
+            font-family: lobster-two-regular;
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0px;
+        }
+    }
+
+    .circulo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #53220D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 25px;
+        right: 10px;
+
+        cursor: pointer;
+
+        img {
+            filter: invert(100%);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .pretin {
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+        p {
+            color: #000;
+            font-size: 15px;
+            font-family: lato-regular;
+            font-weight: 300;
+            margin: 0px;
+            margin-right: 3px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+}

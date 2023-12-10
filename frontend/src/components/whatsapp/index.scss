@@ -1,0 +1,55 @@
+.cardWhats{
+    display: flex;
+
+    position: fixed;
+    bottom: 20px;
+    right: -300px;
+
+    width: 400px;
+    height: 100px;
+
+    z-index: 9999;
+
+    cursor: pointer;
+
+    transition: right 0.5s ease;
+
+    &:hover{
+        right: 0px;
+    }
+
+    .whatsicon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #25d366;
+
+        width: 30%;
+        height: 100%;
+
+        img{
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    .direitaWhats{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-left: 5px;
+        padding-bottom: 10px;
+
+        background-color: white;
+
+        h3{
+            font-family: lobster-two-regular;
+        }
+
+        p{
+            font-family: lato-regular;
+        }
+    }
+}

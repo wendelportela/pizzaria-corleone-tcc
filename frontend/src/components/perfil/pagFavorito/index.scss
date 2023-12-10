@@ -1,0 +1,53 @@
+.PagFavorito{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 15px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
+    max-height: 610px;
+
+    gap: 15px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+     }
+
+     &::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 5px;
+        margin-right: 10px;
+     }
+
+     &::-webkit-scrollbar-track {
+        background: transparent;
+     }
+
+     .not {
+      height: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+          opacity: 0.8;
+          color: black;
+      }
+
+      img {
+          width: 23px;
+          margin-right: 12px;
+
+          animation: loading 1s infinite;
+      }
+  }
+}

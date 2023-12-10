@@ -1,0 +1,129 @@
+.card-favorito {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+   cursor: pointer;
+
+   font-family: lato-regular;
+
+   width: 100%;
+   height: 160px;
+   padding: 5px;
+
+   box-shadow: 2px 2px 2px 2px rgb(160, 160, 160);
+   border-radius: 10px;
+
+   .ladoCardFavorito {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 60%;
+   }
+
+   .favorito-pizza {
+      width: 40%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+   }
+
+   .favorito-secao-lateral {
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0x;
+
+      h1 {
+         font-size: 1.6rem;
+         color: #53220D;
+         margin-bottom: 2px;
+      }
+
+      b {
+         font-size: 13px;
+      }
+
+      p {
+         font-size: 14px;
+      }
+   }
+
+
+   .favorito-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin-left: 10px;
+      gap: 20px;
+   }
+
+   .favorito-icons h3 {
+      font-size: 18px;
+      color: #53220D;
+   }
+
+   .favorito-icons img {
+      width: 20px;
+      height: 20px;
+
+
+   }
+
+   .favorito-circulo {
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 27px;
+      height: 27px;
+      background-color: rgb(214, 214, 214);
+      border-radius: 100%;
+   }
+
+   .favorito-circulo>img {
+      width: 16px;
+      height: 16px;
+      margin: 0px !important;
+   }
+
+   .circulo {
+
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-self: end;
+      transition: 150ms;
+      border: black 1px solid;
+
+      &:hover {
+         cursor: pointer;
+      }
+
+      .coracaoAtv {
+         margin-top: 3px;
+         width: 21px;
+
+         fill: white;
+         border: none;
+      }
+
+      .coracaoDst {
+         margin-top: 3px;
+         width: 21px;
+
+         fill: rgb(255, 0, 0);
+         border: none;
+      }
+
+   }
+}

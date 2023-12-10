@@ -1,0 +1,177 @@
+.custom-modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    align-self: center;
+  }
+
+  .conteudo-filtros {
+    display: flex;
+
+    p {
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+  }
+  
+  .modal-label {
+    display: block;
+    margin-bottom: 10px;
+
+
+
+    div {
+      display: flex;
+
+
+      h5 {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 480;
+      }
+    }
+  }
+
+  .paymentForm {
+    margin-bottom: 10px;     
+    cursor: pointer;
+  }
+
+  .payment-input {
+    border: 1px solid #14607e;
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  .divisao-filtros {
+    border: 1px solid #14607e;
+    margin: 0px 10px;
+  }
+
+  .modal-label-2 {
+    padding-left: 10px;
+    width: 150px;
+
+    input {
+      outline: none;
+    }
+  }
+
+
+  
+  .modal-input {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #14607e;
+    border-radius: 4px;
+  }
+
+
+  .modal-button-filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .modal-button {
+    background-color: #14607e;
+    padding: 10px;
+    height: 20%;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  //// pedidos
+  
+
+  /// PRIMEIRA PARTE DO FILTRO ---  (A AO Z)
+  .modal-label-pedidos1 {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    
+
+
+    h4 {
+      font-size: 16px;
+      font-weight: 400;
+      align-self: center;
+    }
+
+  }
+
+  .payment-input-pedidos1 {
+    margin: 0px;
+    border: 1px solid #14607e;
+    border-radius: 3px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    margin-right: 10px;
+  }
+
+
+  .modal-first-conteudo {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+//// SEGUNDA PARTE FILTROS (ENTREGUE, CANCELADO)
+
+
+
+  .modal-label-pedidos2 {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+  .modal-second-conteudo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+
+    h6 {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+  }
+
+  .payment-input-pedidos2 {
+    display: flex;
+    border: 1px solid #14607e;
+    border-radius: 3px;
+    height: 71%;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center; 
+ 
+  }
+
+
+  

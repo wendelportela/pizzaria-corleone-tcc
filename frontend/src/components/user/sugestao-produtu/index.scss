@@ -1,0 +1,53 @@
+.com-sugestao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 10px;
+
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 10px;
+    
+    width: 170px;
+   > img{
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    > p{margin-bottom: 10px;
+        text-align: center;
+       }
+   > div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 10px;
+
+        width: 100%;
+        div{
+            display: flex;
+      
+        }
+            div > p {
+                margin-top: 3px;
+                margin-left: 5px;
+                margin-right: 5px;
+                  }
+
+ 
+
+        h4 {
+         margin-right: 10px;
+        color: rgb(179, 179, 179);
+        } 
+    }
+    button{
+        margin:0px !important;
+    }
+
+ 
+}

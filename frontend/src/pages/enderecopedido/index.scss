@@ -1,0 +1,147 @@
+
+
+
+.pagina-endereco {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F5F2;
+    padding: 35px;
+
+    .andamento-endereco {
+        margin-bottom: 35px;
+    }
+
+    .conteudo-endereco {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .endereco-endereco {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        width: 451px;
+    }
+
+    .endereco-endereco p {
+        font-weight: 500;
+    }
+
+    .endereco-endereco h3 {
+        font-size: 18px;
+    }
+    .endereco-endereco h2 {
+        font-size: 17px;
+        color: #53220D;
+    }
+
+    .entrega {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entrega > div {
+        margin-bottom: 15px;
+    }
+
+    .entrega h1 {
+        font-size: 18px;
+        margin: 10px 0px;
+    }
+
+    .padrao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #53220D;
+        width: 451px;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    .padrao .tipo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .padrao h3 {
+        font-size: 16px;
+    }
+
+    .padrao p {
+        font-weight: 500;
+    }
+
+    .padrao h4 {
+        font-size: 16px;
+        color: #0B9B00;
+        font-weight: 400;
+        padding-right: 10px;
+    }
+
+    .forma {
+        display: flex;
+    }
+
+    .padrao .forma div {
+        height: 20px;
+        width: 20px;
+        background-color: #53220D;
+        border-radius: 50px;
+    }
+
+    .padrao h5{
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+        padding-right: 10px;
+    }
+
+    .forma-2 {
+        display: flex;
+    }
+
+    .padrao .forma-2 div {
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 50px;
+    }
+
+    .final {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .precos {
+        display: flex;
+        align-items: center;
+    }
+
+    .precos h2 {
+        font-size: 16px;
+        padding-right: 25px;
+    }
+
+    .precos h4 {
+        font-size: 16px;
+        padding-left: 25px;
+        color: #0B9B00;
+        font-weight: 500;
+    }
+
+    .botoes button {
+        padding: 7px 55px;
+        border-radius: 50px;
+        background-color: #53220D;
+        margin-top: 50px;
+        color: #fff;
+    }
+
+}

@@ -1,0 +1,138 @@
+.cardCarrinho {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
+
+    &:hover .svg {
+        display: block;
+    }
+
+    p {
+        font-family: lato-regular;
+    }
+
+
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.30);
+    ;
+
+    width: 390.984px;
+    height: 131px;
+
+    .alimento {
+        background-image: url('../../../assets/images/pictures/pizza-marguerita.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+
+        width: 184.483px;
+        height: 100%;
+    }
+
+    .descricaoProduto {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            font-family: lobster-two-regular;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        svg {
+            display: none;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .circulo {
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 3px;
+            margin-bottom: 15px;
+            margin-right: 5px;
+
+            img {
+                height: 17px;
+                width: 17px;
+            }
+
+        }
+    }
+
+    .pequenasInformacoes {
+        height: 100%;
+        width: calc(100% - 184.483px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 4px;
+        padding: 10px 2px;
+    }
+
+
+    .baixoDescricaoProdutos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5px;
+        justify-self: end;
+
+        >p {
+            margin-right: 7px;
+        }
+
+
+
+        .pretin {
+            display: flex;
+            align-items: center;
+
+            p {
+                color: #000;
+                font-size: 15px;
+                font-family: lato-regular;
+                font-weight: 300;
+                margin: 0px;
+                margin-right: 3px;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .qtd {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 28px;
+        width: 58px;
+        padding-left: 4px;
+        padding-right: 5px;
+
+        border-radius: 5px;
+        border: 1px solid rgb(236, 236, 236);
+        color: #53220D;
+
+        cursor: pointer;
+        user-select: none;
+
+        p {
+            height: 100%;
+            font-size: 21px;
+        }
+    }
+}

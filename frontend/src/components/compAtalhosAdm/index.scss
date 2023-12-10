@@ -1,0 +1,133 @@
+.pagina-comp-atalhos {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D3E53;
+    justify-content: space-between;
+
+
+    .container-atalhos {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+
+    .container-atalhos div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: #fff;
+        align-items: center; 
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .container-atalhos > div:hover {
+        background: #165269;
+        transition: 0.3s;
+    }
+
+    .container-atalhos h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .container-atalhos img {
+        height: 18px;
+        width: 18px;
+        margin-right: 5px;
+    }
+
+    .produto-atalhos {
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        padding: 0px !important;
+    }
+    .pedido {
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        padding: 0px !important;
+    }
+
+    #pedido {
+        height: 8px;
+        width: 18px;
+    }
+
+    .sair{
+        font-size: 10px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .sair:hover {
+        background: #58889C;
+        transition: 0.3s;
+    }
+
+    .sair img {
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .pop-up-atalhos{
+        width: 120%;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center!important;
+
+
+        img {
+            height: 15px;
+            width: 18px;
+            margin-top: 15px;
+        }
+
+        h3:hover {
+            background: #14607e;
+            transition: 0.3s;
+        }
+
+        h4:hover {
+            background: #14607e;
+            transition: 0.3s;
+        }
+
+        h3 {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 0px;
+            
+            width: 120%;
+            padding-left: 10px;
+        }
+
+        h4 {
+            width: 120%;
+            font-size: 14px;
+            padding: 10px 0px;
+            font-weight: 500;
+            
+            padding-left: 10px;
+        }
+
+        div {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 100%;
+            padding: 0px;
+        }
+    }
+    .clientes {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0px !important;
+    }
+}

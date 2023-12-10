@@ -1,0 +1,234 @@
+
+/// endpoits  favorito {
+
+    endpoit que inseri um novo favorito :
+
+        verbo : POST
+        url ('http://localhost:5000/corleone/produtos/favoritos')
+
+        enviar informações em uma variavel de objeto ( os campos  'cliente' e 'produto' são os ids do cliente e do produto que 
+        deseja adcionar ) 
+
+        {
+        "cliente" : 4,
+        "produto" : 7,
+        "favorito": true
+        }
+
+
+
+    endpoit consulta por id do cliente  :
+
+        verbo : GET
+        url ('http://localhost:5000/corleone/produtos/favoritos/usuario/' + id)
+
+        listar todos os produtos favoritos do cliente
+
+
+    
+
+    endpoit de consulta , busca todos os itens da tabela favorito (sem filtros) :
+
+        verbo : GET
+        url ('http://localhost:5000/corleone/produtos/favoritos/listar')
+
+        busca todos os resultados cadastrados na tabela favorito
+    
+    
+
+    endpoit de alteração :
+
+        verbo : PUT
+        url  ('http://localhost:5000/corleone/produtos/alterar/favoritos')
+
+        {
+            "favorito": true,
+            "id":5
+        }
+        
+        enviar uma variavel de objeto com o id da restricao e novo status da restrição (true ou false).
+        
+        
+    endpoit de verificação :
+
+        verbo : GET
+        url ('http://localhost:5000/corleone/produtos/favoritos/verificar')
+
+        {
+            "produto": 2,
+            "cliente":4
+        } 
+        * colocar os ids ( produto e cliente)
+
+        enviar os ids do produto e do cliente por uma variavel de objeto , verificando se o cliente ja cadastrou 
+        uma determinada pizza , possibilitando o insert , caso o usuario ja tenha a pizza cadastrada muda 
+        para update e altera o valor do favorito  
+  
+
+
+/// }
+
+
+
+/// endpoits carrinho {
+
+inserir itens no carrinho :
+
+    verbo : POST
+    url ('http://localhost:5000/corleone/usuario/carrinho')
+
+           {
+                "produto":2,
+                "cliente":6,
+                "disponivel":true,
+                "qtd":2
+            }
+
+    enviar as informações atraves de uma variavel de objeto com as informações , caso ja nao tenha inserido este produto
+    no carrinho uma vez
+
+
+alterar itens do carrinho
+
+    verbo : PUT
+    url ('http://localhost:5000/corleone/usuario/carrinho/editar')
+
+        {
+            "disponivel":true,
+            "qtd":2,
+            "idcarrinho":1
+        }
+    enviar as informações atraves de uma variavel de objeto com as informações desejadas . se esse cliente nunca tiver inserido 
+    esse produto no carrinho voçê tem que inserir
+
+
+listar todos os itens da tabela carrinho:
+
+    verbo : GET 
+    url ('http://localhost:5000/corleone/usuario/carrinho/listar')
+
+
+lista todos os itens do carrinho de um usuario que ele adcionou:
+
+    verbo : GET
+    url('http://localhost:5000/corleone/usuario/carrinho/listar' + idcliente)
+
+
+verifica se um cliente ja adcionou o produto no carrinho :
+
+    verbo : GET
+    url('http://localhost:5000/corleone/usuario/carrinho/verificar')
+
+        {  
+        "produto":3,
+        "cliente":5
+        } 
+
+      enviar os id do produto e o  do cliente por uma variavel de objeto , para verificar se o usuario ja adcionou 
+      esse produto no carrinho, se ele ja adcionou entao voce altera o produto para false ou true 
+/// }
+
+
+
+
+/// endpoits sugestao {
+
+   listar as sugestoes da pizza (pelo id da pizza)
+
+   verbo: GET
+   url(http://localhost:5000/corleone/sugestao/pizza/2)
+
+}
+
+
+
+
+/// pedido_produto /// {
+
+    nova tabela que armazena os itens do carrinho e começa o pedido do cliente
+
+    verbo: post 
+    url (http://localhost:5000/corleone/pedido/produto)
+
+
+              {
+                    "id_cliente":  1   ,
+                    "desconto ": "20" ,
+                    
+                    "produtos": {
+                        "itens": [
+                        {"id_produto": 1, "quantidade": 3},
+                        {"id_produto": 2, "quantidade": 2}
+                        ]
+                    },
+                    
+                    "total_compra": "150"
+                }
+
+    informações : recebe uma variavel de objeto que contem os itens do carrinho e o total  da total_compra
+    dentro desse objeto contem outro objeto com as informações dos produtos.
+
+
+    verbo : GET
+    url (http://localhost:5000/corleone/pedido/cliente/1)
+
+    Respota da API ( nome dos campos) :
+          
+        {
+            "id_pedido_produto": 2,
+            "id_cliente": 1,
+            "desconto": "20",
+
+            "nome_cliente": "maximos",
+            "ds_total": "150",
+
+            "ds_produtos": {
+            "itens": [
+                    {
+                        "id_produto": 1,
+                        "quantidade": 3
+                    },
+                    {
+                        "id_produto": 2,
+                        "quantidade": 2
+                    }
+               ]
+            }
+  }
+
+    recebe o id do cliente pela rota . vai listar o pedido do cliente pelo id.
+
+
+    verbo : PUT
+    url(http://localhost:5000/corleone/altera/pedido/1)
+
+    {
+  
+        "desconto": "20" ,
+        
+        "produtos": {
+            "itens": [
+            {"id_produto": 1 ,    "quantidade": 3},
+            {"id_produto": 2 ,     "quantidade": 2},
+            {"id_produto": 2 ,     "quantidade": 2},
+                {"id_produto": 2 , "quantidade": 2}
+            ]
+        },
+        
+        "total": "170"
+    } 
+
+   altera a compra recebendo o ID do cliente pela rota e os novos valores da compra pelo body
+
+   varriavel de objeto que armazena os produtos :
+
+     "produtos": { " itens ": [ ] }
+     "produtos": { " itens ": [ { "id_produto :1 ", "quantidade" :1 } ] }
+
+     
+  vrebo : GET
+  url(http://localhost:5000/corleone/pedido/cliente/verificar/2/1)
+
+  recebe o id pedido e o id cliente e verrifica se o cliente ja esta com uma compra ativa
+     
+}

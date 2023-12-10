@@ -1,0 +1,103 @@
+.forma-pag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images//fundoo.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+
+.containerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.pag>p{
+    color: #8B8585;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 12px;
+   
+
+}
+    .titulo{
+        margin-top: 30px;
+        text-align: left;
+        align-items: end;
+        padding-right: 190px;
+        flex-direction: column;
+    }
+
+    .titulo>h1{
+        font-size: 22px;
+        color: #53220D;
+        align-items: baseline;
+        text-align: left;
+        
+    }
+
+    .pag{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tudo{
+        display: flex;
+        flex-direction: row;
+        
+        margin: 30px;
+        
+    }
+
+    .pag>img{
+        height: 20px;
+        width: auto;
+        margin-top: 12px;
+        margin-right: 5px;
+    }
+        
+   
+    .vale>h3{
+        color: #8B8585;
+        font-weight: 500;
+        font-size: 15px;
+        padding-left: 28px;
+        margin-bottom: 10px;
+    }
+
+    .tipocartao>h3{
+        color: #8B8585;
+        font-weight: 500;
+        font-size: 15px;
+        padding-left: 28px;
+        margin-bottom: 10px;
+    }
+    .pag{
+        border: #cfcfcf 1.6px solid;
+        width: 250px;
+        height: 40px;
+        padding: 0px 3px;
+        border-radius: 7px;
+        outline: #A59A9A;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .botao> button{
+        background-color: #53220D;
+        width: 200px;
+        padding: 8px;
+        border-radius: 50px;
+        color: #fff ;
+        font-size: 16px;
+        border: #000 2px solid;
+    }
+    .botao{
+        margin-left: 60px;
+    }
+}

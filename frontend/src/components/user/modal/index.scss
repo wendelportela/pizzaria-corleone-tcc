@@ -1,0 +1,180 @@
+.sugestoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 20px;
+
+    position: fixed;
+
+    z-index: 5;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1082px;
+    height: 513px;
+    border-radius: 15px;
+    border: 0.5px solid #53220D;
+    background: #FFF;
+
+    >svg {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+    }
+
+    .imagem-produto {
+        background-image: url('../../../assets/images/pictures/pizza-marguerita.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 523px;
+        height: 452.758px;
+        border-radius: 2px;
+    }
+
+    .opcoes {
+        margin-left: 20px;
+        height: 452.758px;
+        width: calc(100% - 523px);
+        overflow-y: scroll;
+        padding-left: 10px;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #888;
+            /* Cor do polegar */
+            border-radius: 5px;
+        }
+
+        >h1 {
+            font-family: lobster-two-regular;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        >h2 {
+            font-family: lato-regular;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .localPartida {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 12px;
+            width: 446px;
+            height: 63.066px;
+            border: 1.5px solid #D9D9D9;
+            padding-left: 7px;
+            padding-top: 4px;
+
+            .ruaAvaliacao {
+                display: flex;
+                gap: 5px;
+                padding-left: 10px;
+
+                p {
+                    margin-bottom: 3px;
+                    font-family: lato-regular;
+                }
+            }
+
+            .precoEntrega {
+                display: flex;
+                gap: 5px;
+                padding-left: 10px;
+
+                p {
+                    margin-bottom: 3px;
+                    font-family: lato-regular;
+                }
+            }
+        }
+
+        .iconezin {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .opcoesExtra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #DFDFDF;
+        width: 458px;
+        height: 63px;
+        margin-top: 20px;
+        padding: 0px 20px;
+
+        .esquerdista {
+
+            h2 {
+                color: #000;
+                font-family: lato-regular;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                color: #323232;
+                font-family: lato-regular;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+
+
+
+        .direitaOpcional {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            background: #212020;
+            width: 86px;
+            height: 20px;
+            flex-shrink: 0;
+
+
+            color: white;
+            font-family: lato-regular;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .butaumzin{
+            margin-top: 20px;
+        }
+    }
+
+    .deLadinho{
+        margin-top: 20px;
+
+        > div{
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-family: lato-regular;
+            margin: 10px;
+
+            p{
+                margin-left: 5px;
+            }
+        }
+    }
+
+}
